@@ -1,0 +1,30 @@
+GET http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+
+
+###
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200026",
+    "admissionYear": "2025",
+    "firstName": "Pranav",
+    "middleName": "Subhash",
+    "lastName": "Kale",
+    "class": 10,
+    "section": "C",
+    "age": 15,
+    "gender": "M",
+    "dob": "2010-12-02",
+    "guardianName": "Subhash Kale",
+    "contactNo": 9876500035,
+    "address": "Warje",
+    "city": "Pune"
+  }
+
+
+
+
+###
+
+delete http://localhost:4004/odata/v4/Scool/Student(admissionNo=1200021) HTTP/1.1
