@@ -32,3 +32,8 @@ entity Student : managed {
       Active        : Boolean default true;
 
 }
+
+
+view ClassData as select from Student {
+  class, section
+}

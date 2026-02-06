@@ -1,0 +1,585 @@
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+   "admissionNo" : "1200001",
+   "admissionYear": "2025",
+   "firstName":"Rahul",
+   "middleName":"Roy",
+   "lastName":"Raj",
+   "class":1,
+   "section":"A",
+   "age":6,
+   "gender":"M",
+   "dob":"2019-01-01",
+   "guardianName":"Raju",
+   "contactNo": 1234567890,
+   "address" :"Pune",
+   "city" :"Pune"
+}
+
+
+### 2
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+
+{
+    "admissionNo": "1200002",
+    "admissionYear": "2025",
+    "firstName": "Aarav",
+    "middleName": "Kumar",
+    "lastName": "Sharma",
+    "class": 1,
+    "section": "B",
+    "age": 6,
+    "gender": "M",
+    "dob": "2019-03-12",
+    "guardianName": "Vikas Sharma",
+    "contactNo": 9876500011,
+    "address": "Baner",
+    "city": "Pune"
+  }
+
+### 3
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200003",
+    "admissionYear": "2025",
+    "firstName": "Sara",
+    "middleName": "Ali",
+    "lastName": "Khan",
+    "class": 2,
+    "section": "A",
+    "age": 7,
+    "gender": "F",
+    "dob": "2018-05-20",
+    "guardianName": "Aslam Khan",
+    "contactNo": 9876500012,
+    "address": "Kothrud",
+    "city": "Pune"
+  }
+
+
+### 4
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200004",
+    "admissionYear": "2025",
+    "firstName": "Ishaan",
+    "middleName": "Raj",
+    "lastName": "Patil",
+    "class": 2,
+    "section": "B",
+    "age": 7,
+    "gender": "M",
+    "dob": "2018-10-02",
+    "guardianName": "Ramesh Patil",
+    "contactNo": 9876500013,
+    "address": "Viman Nagar",
+    "city": "Pune"
+  }
+
+### 5
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200005",
+    "admissionYear": "2025",
+    "firstName": "Meera",
+    "middleName": "Sanjay",
+    "lastName": "Desai",
+    "class": 2,
+    "section": "C",
+    "age": 7,
+    "gender": "F",
+    "dob": "2018-01-28",
+    "guardianName": "Sanjay Desai",
+    "contactNo": 9876500014,
+    "address": "Hinjawadi",
+    "city": "Pune"
+  }
+
+
+### 6
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+
+{
+    "admissionNo": "1200006",
+    "admissionYear": "2025",
+    "firstName": "Kabir",
+    "middleName": "Anil",
+    "lastName": "Joshi",
+    "class": 3,
+    "section": "B",
+    "age": 8,
+    "gender": "M",
+    "dob": "2017-07-09",
+    "guardianName": "Anil Joshi",
+    "contactNo": 9876500015,
+    "address": "Wakad",
+    "city": "Pune"
+  }
+
+### 7
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200007",
+    "admissionYear": "2025",
+    "firstName": "Riya",
+    "middleName": "Sunil",
+    "lastName": "Kulkarni",
+    "class": 3,
+    "section": "B",
+    "age": 8,
+    "gender": "F",
+    "dob": "2017-11-15",
+    "guardianName": "Sunil Kulkarni",
+    "contactNo": 9876500016,
+    "address": "Aundh",
+    "city": "Pune"
+  }
+
+
+
+### 8
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200008",
+    "admissionYear": "2025",
+    "firstName": "Dev",
+    "middleName": "Mahesh",
+    "lastName": "Girish",
+    "class": 3,
+    "section": "B",
+    "age": 8,
+    "gender": "M",
+    "dob": "2017-02-22",
+    "guardianName": "Mahesh Girish",
+    "contactNo": 9876500017,
+    "address": "Magarpatta",
+    "city": "Pune"
+  }
+
+
+### 9
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200009",
+    "admissionYear": "2025",
+    "firstName": "Anaya",
+    "middleName": "Prakash",
+    "lastName": "More",
+    "class": 3,
+    "section": "C",
+    "age": 8,
+    "gender": "F",
+    "dob": "2017-09-30",
+    "guardianName": "Prakash More",
+    "contactNo": 9876500018,
+    "address": "Kharadi",
+    "city": "Pune"
+  }
+
+### 10
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200010",
+    "admissionYear": "2025",
+    "firstName": "Vihaan",
+    "middleName": "Nitin",
+    "lastName": "Bhosale",
+    "class": 4,
+    "section": "A",
+    "age": 9,
+    "gender": "M",
+    "dob": "2016-06-18",
+    "guardianName": "Nitin Bhosale",
+    "contactNo": 9876500019,
+    "address": "Sinhagad Road",
+    "city": "Pune"
+  }
+
+
+### 11
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+
+{
+    "admissionNo": "1200011",
+    "admissionYear": "2025",
+    "firstName": "Tara",
+    "middleName": "Vivek",
+    "lastName": "Jadhav",
+    "class": 4,
+    "section": "B",
+    "age": 9,
+    "gender": "F",
+    "dob": "2016-12-05",
+    "guardianName": "Vivek Jadhav",
+    "contactNo": 9876500020,
+    "address": "Camp",
+    "city": "Pune"
+  }
+
+### 12
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200012",
+    "admissionYear": "2025",
+    "firstName": "Reyansh",
+    "middleName": "Suresh",
+    "lastName": "Naik",
+    "class": 4,
+    "section": "C",
+    "age": 9,
+    "gender": "M",
+    "dob": "2016-03-03",
+    "guardianName": "Suresh Naik",
+    "contactNo": 9876500021,
+    "address": "Pashan",
+    "city": "Pune"
+  }
+
+### 13
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+
+{
+    "admissionNo": "1200013",
+    "admissionYear": "2025",
+    "firstName": "Zara",
+    "middleName": "Imran",
+    "lastName": "Shaikh",
+    "class": 5,
+    "section": "A",
+    "age": 10,
+    "gender": "F",
+    "dob": "2015-04-14",
+    "guardianName": "Imran Shaikh",
+    "contactNo": 9876500022,
+    "address": "Hadapsar",
+    "city": "Pune"
+  }
+
+### 14
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200014",
+    "admissionYear": "2025",
+    "firstName": "Arjun",
+    "middleName": "Harish",
+    "lastName": "Mehta",
+    "class": 5,
+    "section": "B",
+    "age": 10,
+    "gender": "M",
+    "dob": "2015-08-07",
+    "guardianName": "Harish Mehta",
+    "contactNo": 9876500023,
+    "address": "Bavdhan",
+    "city": "Pune"
+  }
+
+### 15
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+
+{
+    "admissionNo": "1200015",
+    "admissionYear": "2025",
+    "firstName": "Kiara",
+    "middleName": "Pradeep",
+    "lastName": "Salunke",
+    "class": 5,
+    "section": "C",
+    "age": 10,
+    "gender": "F",
+    "dob": "2015-01-19",
+    "guardianName": "Pradeep Salunke",
+    "contactNo": 9876500024,
+    "address": "Nigdi",
+    "city": "Pune"
+  }
+
+### 16
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200016",
+    "admissionYear": "2025",
+    "firstName": "Om",
+    "middleName": "Vasant",
+    "lastName": "Chavan",
+    "class": 6,
+    "section": "A",
+    "age": 11,
+    "gender": "M",
+    "dob": "2014-02-11",
+    "guardianName": "Vasant Chavan",
+    "contactNo": 9876500025,
+    "address": "Wanowrie",
+    "city": "Pune"
+  }
+
+### 17
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200017",
+    "admissionYear": "2025",
+    "firstName": "Myra",
+    "middleName": "Rohit",
+    "lastName": "Bhagat",
+    "class": 6,
+    "section": "B",
+    "age": 11,
+    "gender": "F",
+    "dob": "2014-09-23",
+    "guardianName": "Rohit Bhagat",
+    "contactNo": 9876500026,
+    "address": "Kalyani Nagar",
+    "city": "Pune"
+  }
+
+### 18
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200017",
+    "admissionYear": "2025",
+    "firstName": "Myra",
+    "middleName": "Rohit",
+    "lastName": "Bhagat",
+    "class": 6,
+    "section": "B",
+    "age": 11,
+    "gender": "F",
+    "dob": "2014-09-23",
+    "guardianName": "Rohit Bhagat",
+    "contactNo": 9876500026,
+    "address": "Kalyani Nagar",
+    "city": "Pune"
+  }
+
+### 19
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200019",
+    "admissionYear": "2025",
+    "firstName": "Aisha",
+    "middleName": "Sadiq",
+    "lastName": "Pathan",
+    "class": 7,
+    "section": "C",
+    "age": 12,
+    "gender": "F",
+    "dob": "2013-12-27",
+    "guardianName": "Sadiq Pathan",
+    "contactNo": 9876500028,
+    "address": "Bibvewadi",
+    "city": "Pune"
+  }
+
+### 20
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200020",
+    "admissionYear": "2025",
+    "firstName": "Hridaan",
+    "middleName": "Sanjiv",
+    "lastName": "Kulal",
+    "class": 8,
+    "section": "A",
+    "age": 13,
+    "gender": "M",
+    "dob": "2012-05-05",
+    "guardianName": "Sanjiv Kulal",
+    "contactNo": 9876500029,
+    "address": "Deccan Gymkhana",
+    "city": "Pune"
+  }
+
+### 21
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+
+{
+    "admissionNo": "1200021",
+    "admissionYear": "2025",
+    "firstName": "Pari",
+    "middleName": "Deepak",
+    "lastName": "Gokhale",
+    "class": 8,
+    "section": "B",
+    "age": 13,
+    "gender": "F",
+    "dob": "2012-11-11",
+    "guardianName": "Deepak Gokhale",
+    "contactNo": 9876500030,
+    "address": "Shivajinagar",
+    "city": "Pune"
+  }
+
+
+### 22
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+
+{
+    "admissionNo": "1200022",
+    "admissionYear": "2025",
+    "firstName": "Neil",
+    "middleName": "Ajay",
+    "lastName": "Sawant",
+    "class": 9,
+    "section": "A",
+    "age": 14,
+    "gender": "M",
+    "dob": "2011-07-17",
+    "guardianName": "Ajay Sawant",
+    "contactNo": 9876500031,
+    "address": "Katraj",
+    "city": "Pune"
+  }
+
+### 23
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200023",
+    "admissionYear": "2025",
+    "firstName": "Saanvi",
+    "middleName": "Vikram",
+    "lastName": "Shinde",
+    "class": 9,
+    "section": "B",
+    "age": 14,
+    "gender": "F",
+    "dob": "2011-01-09",
+    "guardianName": "Vikram Shinde",
+    "contactNo": 9876500032,
+    "address": "Mundhwa",
+    "city": "Pune"
+  }
+
+### 24
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+
+{
+    "admissionNo": "1200024",
+    "admissionYear": "2025",
+    "firstName": "Yash",
+    "middleName": "Pravin",
+    "lastName": "Gawande",
+    "class": 10,
+    "section": "A",
+    "age": 15,
+    "gender": "M",
+    "dob": "2010-03-26",
+    "guardianName": "Pravin Gawande",
+    "contactNo": 9876500033,
+    "address": "Model Colony",
+    "city": "Pune"
+  }
+
+### 25
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200025",
+    "admissionYear": "2025",
+    "firstName": "Nitya",
+    "middleName": "Rajan",
+    "lastName": "Iyer",
+    "class": 10,
+    "section": "B",
+    "age": 15,
+    "gender": "F",
+    "dob": "2010-09-08",
+    "guardianName": "Rajan Iyer",
+    "contactNo": 9876500034,
+    "address": "Koregaon Park",
+    "city": "Pune"
+  }
+
+### 26
+
+post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+Content-Type : application/json
+
+{
+    "admissionNo": "1200026",
+    "admissionYear": "2025",
+    "firstName": "Pranav",
+    "middleName": "Subhash",
+    "lastName": "Kale",
+    "class": 10,
+    "section": "C",
+    "age": 15,
+    "gender": "M",
+    "dob": "2010-12-02",
+    "guardianName": "Subhash Kale",
+    "contactNo": 9876500035,
+    "address": "Warje",
+    "city": "Pune"
+  }
