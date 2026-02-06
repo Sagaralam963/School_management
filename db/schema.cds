@@ -35,5 +35,5 @@ entity Student : managed {
 
 
 view ClassData as select from Student {
-  class, section
+  key admissionNo, class, section
 }

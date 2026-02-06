@@ -2,7 +2,7 @@ post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
 Content-Type : application/json
 
 {
-   "admissionNo" : "1200001",
+   "admissionNo" : 1200001,
    "admissionYear": "2025",
    "firstName":"Rahul",
    "middleName":"Roy",
@@ -23,7 +23,6 @@ Content-Type : application/json
 
 post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
 Content-Type : application/json
-
 
 {
     "admissionNo": "1200002",

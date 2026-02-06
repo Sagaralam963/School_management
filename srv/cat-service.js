@@ -3,9 +3,9 @@ const { SELECT } = require('@sap/cds/lib/ql/cds-ql');
 
 module.exports = async (srv) => {
 
-    const {Student} = srv.entities;
+  const { Student } = srv.entities;
 
-srv.before('CREATE', 'Student', async(req) => {
+  srv.before('CREATE', 'Student', async (req) => {
 
     const tx = cds.tx(req);
 
@@ -15,13 +15,27 @@ srv.before('CREATE', 'Student', async(req) => {
 
     console.log(maxRow);
 
-    const next_AdmissionNo = maxRow.Max_AdmissionNo + 1;
+    if (maxRow.Max_AdmissionNo == null) {
 
-    console.log("next_AdmissionNo : ",next_AdmissionNo);
+      const next_AdmissionNo = 1200001;
 
-    req.data.admissionNo = next_AdmissionNo;
+      console.log("next_AdmissionNo : ", next_AdmissionNo);
+
+      req.data.admissionNo = next_AdmissionNo;
+
+    } else {
+
+      const next_AdmissionNo = maxRow.Max_AdmissionNo + 1;
+
+      console.log("next_AdmissionNo : ", next_AdmissionNo);
+
+      req.data.admissionNo = next_AdmissionNo;
+
+    }
+
+
 
     return req.data;
-})
+  })
 
 }
