@@ -3,7 +3,12 @@ const { SELECT } = require('@sap/cds/lib/ql/cds-ql');
 
 module.exports = async (srv) => {
 
-  const { Student } = srv.entities;
+
+
+  const { Student,ClassSections } = srv.entities;
+
+  const BP = await cds.connect.to("API_BUSINESS_PARTNER");
+
 
   srv.before('CREATE', 'Student', async (req) => {
 
@@ -36,6 +41,33 @@ module.exports = async (srv) => {
 
 
     return req.data;
-  })
+  });
+
+  
+  srv.on('getClassCout', async (req)=> {
+
+    const { className } = req.data;
+    
+    const tx = cds.tx(req);
+
+    const data = await tx.run(
+      SELECT.from (ClassSections).where({class:className})
+    )
+    console.log('ClassSections data : ',data);
+     console.log('ClassSections count : ',data.length);
+
+     return {
+      data : data,
+      class1_count : data.length
+     }
+
+  });
+
+
+srv.on('READ', 'A_BusinessPartner', async(req)=>{
+
+  return BP.run(req.query);
+  
+})
 
 }

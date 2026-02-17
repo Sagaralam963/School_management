@@ -2,6 +2,34 @@
   "xsappname": "School",
   "tenant-mode": "dedicated",
   "description": "Security profile of called application",
-  "scopes": [],
-  "role-templates": []
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.Admin",
+      "description": "Administrate Service"
+    },
+    {
+      "name": "$XSAPPNAME.View",
+      "description": "View Access"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "Admin",
+      "description": "Admin role template",
+      "scope-references": [
+        "$XSAPPNAME.Admin",
+        "$XSAPPNAME.View"
+      ]
+    }
+  ],
+  "role-collection": [
+    {
+      "name": "School-Admin",
+      "description": "Admin role collection",
+      "role-template-references": [
+        "$XSAPPNAME.Admin",
+        "$XSAPPNAME.View"
+      ]
+    }
+  ]
 }

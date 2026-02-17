@@ -1,8 +1,11 @@
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+###
+
+
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
-   "admissionNo" : 1200001,
+   "admissionNo" : "1200001",
    "admissionYear": "2025",
    "firstName":"Rahul",
    "middleName":"Roy",
@@ -13,7 +16,7 @@ Content-Type : application/json
    "gender":"M",
    "dob":"2019-01-01",
    "guardianName":"Raju",
-   "contactNo": 1234567890,
+   "contactNo": "1234567890",
    "address" :"Pune",
    "city" :"Pune"
 }
@@ -21,7 +24,7 @@ Content-Type : application/json
 
 ### 2
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -36,14 +39,14 @@ Content-Type : application/json
     "gender": "M",
     "dob": "2019-03-12",
     "guardianName": "Vikas Sharma",
-    "contactNo": 9876500011,
+    "contactNo": "9876500011",
     "address": "Baner",
     "city": "Pune"
   }
 
 ### 3
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -58,7 +61,7 @@ Content-Type : application/json
     "gender": "F",
     "dob": "2018-05-20",
     "guardianName": "Aslam Khan",
-    "contactNo": 9876500012,
+    "contactNo": "9876500012",
     "address": "Kothrud",
     "city": "Pune"
   }
@@ -66,7 +69,7 @@ Content-Type : application/json
 
 ### 4
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -81,14 +84,14 @@ Content-Type : application/json
     "gender": "M",
     "dob": "2018-10-02",
     "guardianName": "Ramesh Patil",
-    "contactNo": 9876500013,
+    "contactNo": "9876500013",
     "address": "Viman Nagar",
     "city": "Pune"
   }
 
 ### 5
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -103,7 +106,7 @@ Content-Type : application/json
     "gender": "F",
     "dob": "2018-01-28",
     "guardianName": "Sanjay Desai",
-    "contactNo": 9876500014,
+    "contactNo": "9876500014",
     "address": "Hinjawadi",
     "city": "Pune"
   }
@@ -111,7 +114,7 @@ Content-Type : application/json
 
 ### 6
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 
@@ -127,14 +130,14 @@ Content-Type : application/json
     "gender": "M",
     "dob": "2017-07-09",
     "guardianName": "Anil Joshi",
-    "contactNo": 9876500015,
+    "contactNo": "9876500015",
     "address": "Wakad",
     "city": "Pune"
   }
 
 ### 7
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -149,7 +152,7 @@ Content-Type : application/json
     "gender": "F",
     "dob": "2017-11-15",
     "guardianName": "Sunil Kulkarni",
-    "contactNo": 9876500016,
+    "contactNo": "9876500016",
     "address": "Aundh",
     "city": "Pune"
   }
@@ -158,7 +161,7 @@ Content-Type : application/json
 
 ### 8
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -173,7 +176,7 @@ Content-Type : application/json
     "gender": "M",
     "dob": "2017-02-22",
     "guardianName": "Mahesh Girish",
-    "contactNo": 9876500017,
+    "contactNo": "9876500017",
     "address": "Magarpatta",
     "city": "Pune"
   }
@@ -181,7 +184,7 @@ Content-Type : application/json
 
 ### 9
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -196,14 +199,14 @@ Content-Type : application/json
     "gender": "F",
     "dob": "2017-09-30",
     "guardianName": "Prakash More",
-    "contactNo": 9876500018,
+    "contactNo": "9876500018",
     "address": "Kharadi",
     "city": "Pune"
   }
 
 ### 10
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -218,7 +221,7 @@ Content-Type : application/json
     "gender": "M",
     "dob": "2016-06-18",
     "guardianName": "Nitin Bhosale",
-    "contactNo": 9876500019,
+    "contactNo": "9876500019",
     "address": "Sinhagad Road",
     "city": "Pune"
   }
@@ -226,7 +229,7 @@ Content-Type : application/json
 
 ### 11
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 
@@ -242,14 +245,14 @@ Content-Type : application/json
     "gender": "F",
     "dob": "2016-12-05",
     "guardianName": "Vivek Jadhav",
-    "contactNo": 9876500020,
+    "contactNo": "9876500020",
     "address": "Camp",
     "city": "Pune"
   }
 
 ### 12
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -264,14 +267,14 @@ Content-Type : application/json
     "gender": "M",
     "dob": "2016-03-03",
     "guardianName": "Suresh Naik",
-    "contactNo": 9876500021,
+    "contactNo": "9876500021",
     "address": "Pashan",
     "city": "Pune"
   }
 
 ### 13
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 
@@ -287,14 +290,14 @@ Content-Type : application/json
     "gender": "F",
     "dob": "2015-04-14",
     "guardianName": "Imran Shaikh",
-    "contactNo": 9876500022,
+    "contactNo": "9876500022",
     "address": "Hadapsar",
     "city": "Pune"
   }
 
 ### 14
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -309,14 +312,14 @@ Content-Type : application/json
     "gender": "M",
     "dob": "2015-08-07",
     "guardianName": "Harish Mehta",
-    "contactNo": 9876500023,
+    "contactNo": "9876500023",
     "address": "Bavdhan",
     "city": "Pune"
   }
 
 ### 15
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 
@@ -332,14 +335,14 @@ Content-Type : application/json
     "gender": "F",
     "dob": "2015-01-19",
     "guardianName": "Pradeep Salunke",
-    "contactNo": 9876500024,
+    "contactNo": "9876500024",
     "address": "Nigdi",
     "city": "Pune"
   }
 
 ### 16
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -354,14 +357,14 @@ Content-Type : application/json
     "gender": "M",
     "dob": "2014-02-11",
     "guardianName": "Vasant Chavan",
-    "contactNo": 9876500025,
+    "contactNo": "9876500025",
     "address": "Wanowrie",
     "city": "Pune"
   }
 
 ### 17
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -376,14 +379,14 @@ Content-Type : application/json
     "gender": "F",
     "dob": "2014-09-23",
     "guardianName": "Rohit Bhagat",
-    "contactNo": 9876500026,
+    "contactNo": "9876500026",
     "address": "Kalyani Nagar",
     "city": "Pune"
   }
 
 ### 18
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -398,14 +401,14 @@ Content-Type : application/json
     "gender": "F",
     "dob": "2014-09-23",
     "guardianName": "Rohit Bhagat",
-    "contactNo": 9876500026,
+    "contactNo": "9876500026",
     "address": "Kalyani Nagar",
     "city": "Pune"
   }
 
 ### 19
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -420,14 +423,14 @@ Content-Type : application/json
     "gender": "F",
     "dob": "2013-12-27",
     "guardianName": "Sadiq Pathan",
-    "contactNo": 9876500028,
+    "contactNo": "9876500028",
     "address": "Bibvewadi",
     "city": "Pune"
   }
 
 ### 20
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -442,14 +445,14 @@ Content-Type : application/json
     "gender": "M",
     "dob": "2012-05-05",
     "guardianName": "Sanjiv Kulal",
-    "contactNo": 9876500029,
+    "contactNo": "9876500029",
     "address": "Deccan Gymkhana",
     "city": "Pune"
   }
 
 ### 21
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 
@@ -465,7 +468,7 @@ Content-Type : application/json
     "gender": "F",
     "dob": "2012-11-11",
     "guardianName": "Deepak Gokhale",
-    "contactNo": 9876500030,
+    "contactNo": "9876500030",
     "address": "Shivajinagar",
     "city": "Pune"
   }
@@ -473,7 +476,7 @@ Content-Type : application/json
 
 ### 22
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 
@@ -489,14 +492,14 @@ Content-Type : application/json
     "gender": "M",
     "dob": "2011-07-17",
     "guardianName": "Ajay Sawant",
-    "contactNo": 9876500031,
+    "contactNo": "9876500031",
     "address": "Katraj",
     "city": "Pune"
   }
 
 ### 23
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -511,14 +514,14 @@ Content-Type : application/json
     "gender": "F",
     "dob": "2011-01-09",
     "guardianName": "Vikram Shinde",
-    "contactNo": 9876500032,
+    "contactNo": "9876500032",
     "address": "Mundhwa",
     "city": "Pune"
   }
 
 ### 24
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 
@@ -534,14 +537,14 @@ Content-Type : application/json
     "gender": "M",
     "dob": "2010-03-26",
     "guardianName": "Pravin Gawande",
-    "contactNo": 9876500033,
+    "contactNo": "9876500033",
     "address": "Model Colony",
     "city": "Pune"
   }
 
 ### 25
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -556,14 +559,14 @@ Content-Type : application/json
     "gender": "F",
     "dob": "2010-09-08",
     "guardianName": "Rajan Iyer",
-    "contactNo": 9876500034,
+    "contactNo": "9876500034",
     "address": "Koregaon Park",
     "city": "Pune"
   }
 
 ### 26
 
-post http://localhost:4004/odata/v4/Scool/Student HTTP/1.1
+post http://localhost:4004/odata/v4/school/Student HTTP/1.1
 Content-Type : application/json
 
 {
@@ -578,7 +581,7 @@ Content-Type : application/json
     "gender": "M",
     "dob": "2010-12-02",
     "guardianName": "Subhash Kale",
-    "contactNo": 9876500035,
+    "contactNo": "9876500035",
     "address": "Warje",
     "city": "Pune"
   }

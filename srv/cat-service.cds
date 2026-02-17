@@ -1,8 +1,29 @@
 using school as s from '../db/schema';
 
-service ScoolService  {
+using {API_BUSINESS_PARTNER as S4} from './external/API_BUSINESS_PARTNER';
 
-    entity Student as projection on s.Student;
-    entity ClassData as projection on s.ClassData;
+using {managed} from '@sap/cds/common';
+
+
+service SchoolService {
+  entity Student       as projection on s.Student;
+  entity ClassSections as projection on s.ClassSection;
+
+  action getClassCout(className: Integer) returns String;
+
+
+}
+
+service BusinessParnerService {
+
+  entity A_BusinessPartner as
+    projection on S4.A_BusinessPartner {
+      key BusinessPartner,
+          Customer,
+          BusinessPartnerFullName,
+          BusinessPartnerGrouping,
+          BusinessPartnerUUID,
+          OrganizationBPName1
+    }
 
 }

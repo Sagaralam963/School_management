@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A simple CAP project.",
   "dependencies": {
+    "@sap-cloud-sdk/connectivity": "^4",
+    "@sap-cloud-sdk/http-client": "^4",
+    "@sap-cloud-sdk/resilience": "^4.4.0",
     "@sap/cds": "^9",
     "express": "^4"
   },
@@ -10,15 +13,16 @@
     "@cap-js/sqlite": "^2",
     "@sap/cds-dk": "^9",
     "cds-plugin-ui5": "^0.13.0",
-    "rimraf": "^5.0.5",
-    "mbt": "^1.2.29"
+    "mbt": "^1.2.29",
+    "rimraf": "^5.0.5"
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-schoolmanagement": "cds watch --open ns.schoolmanagement/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-schoolmanagement": "cds watch --open schoolmanagement/index.html?sap-ui-xx-viewCache=false --livereload false",
     "undeploy": "cf undeploy School --delete-services --delete-service-keys --delete-service-brokers",
     "build": "rimraf resources mta_archives && mbt build --mtar archive",
-    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
+    "watch-project1": "cds watch --open project1/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "private": true,
   "cds": {
@@ -31,6 +35,16 @@
           "url": "db/school.sqlite"
         },
         "schema_evolution": "auto"
+      },
+      "API_BUSINESS_PARTNER": {
+        "kind": "odata-v2",
+        "model": "srv/external/API_BUSINESS_PARTNER",
+        "credentials": {
+          "url": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER",
+          "headers":{
+            "APIkey" : "HThr0N2v8fJiKNnckKDcTsIjzsxI3BUy"
+          }
+        }
       }
     }
   },
@@ -38,6 +52,8 @@
     "app/*"
   ],
   "sapux": [
+    "app/schoolmanagement",
+    "app/schoolmanagement",
     "app/schoolmanagement"
   ]
 }

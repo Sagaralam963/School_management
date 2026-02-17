@@ -2,7 +2,7 @@
 
 specVersion: "4.0"
 metadata:
-  name: ns.schoolmanagement
+  name: project1
 type: application
 server:
   customMiddleware:

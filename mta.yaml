@@ -32,9 +32,37 @@ modules:
       - nsschoolmanagement.zip
       name: nsschoolmanagement
       target-path: resources/
+    - artifacts:
+      - schoolmanagement.zip
+      name: schoolmanagement
+      target-path: resources/
+    - artifacts:
+      - project1.zip
+      name: project1
+      target-path: resources/
 - name: nsschoolmanagement
   type: html5
   path: app/schoolmanagement
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: schoolmanagement
+  type: html5
+  path: app/schoolmanagement
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: project1
+  type: html5
+  path: app/project1
   build-parameters:
     build-result: dist
     builder: custom

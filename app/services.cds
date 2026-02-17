@@ -1,2 +1,2 @@
 
-using from './schoolmanagement/annotations';
+using from './project1/annotations';
