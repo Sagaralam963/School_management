@@ -41,20 +41,3 @@ entity ClassSection {
                    on  students.class   = $self.class
                    and students.section = $self.section;
 }
-
-entity BusinessPartner : cuid, managed {
-  businessPartnerNumber : String;
-  vendorCode            : String;
-  customerCode          : String;
-  companyCode           : String;
-  businessPartnerName1  : String;
-  businessPartnerName2  : String;
-  address               : String;
-  businessPartnerType   : String;
-  partnerRole_ID        : String;
-  language_code         : String;
-  valueClaimExcluded    : Boolean;
-  isMarkedForDeletion   : Boolean;
-  parentBusinessPartner : String;
-
-}
